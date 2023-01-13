@@ -1,12 +1,15 @@
 .main {
   position: relative;
-  z-index: 9;
+  z-index: 2;
+  height: fit-content;
+
   &-bg {
     position: absolute;
     top: 0;
     z-index: 1;
     width: 100%;
   }
+
   &-content {
     position: relative;
     z-index: 10;
