@@ -12,6 +12,7 @@ function Root() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/words" element={<Words />} />
           <Route path="/wordslist" element={<WordList />} />
           <Route path="/about" element={<About />} />

@@ -4,14 +4,16 @@ header {
   left: 0;
   right: 0;
   display: block;
-  z-index: 99;
+  z-index: 9;
+  margin: 0 auto;
 
   .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
 
   &-links {
     display: flex;
