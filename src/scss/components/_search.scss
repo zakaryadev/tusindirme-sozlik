@@ -55,9 +55,6 @@
       &:active {
         border: none;
       }
-
-      
-
     }
 
     img {
@@ -71,5 +68,26 @@
       }
     }
     
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    .btn {
+      cursor: pointer;
+      margin-right: 60px;
+      color: #FFFFFF;
+      background: none;
+      border: none;
+      display: flex;
+      flex-direction: row;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
   }
 }
