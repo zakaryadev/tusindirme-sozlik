@@ -20,12 +20,12 @@
       border: none;
       cursor: pointer;
       color: var(--backgroundColor);
-      transition: all .3s ease-in-out;
+      transition: all .2s ease-in-out;
       &:active {
-        transform: scale(1.05);
+        transform: scale(.9);
       }
       &:hover {
-        opacity: 0.9;
+        opacity: 0.95;
       }
     }
   }

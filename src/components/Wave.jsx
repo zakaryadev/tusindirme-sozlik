@@ -6,10 +6,10 @@ export const Wave = () => {
     <div className="wave">
       <div className="button-group">
         <button className="btn">
-          O’rganish uchun <strong>lug’at</strong>
+          Úyreniw ushın <strong>sózlik</strong>
         </button>
         <button className="btn">
-          <strong>So’zlarni o’rganishning</strong> eng samarali usuli
+          <strong>Sózlerdi úyreniwdiń</strong> eń ónimdarlı usılı
         </button>
       </div>
       <img src={bg} alt="bg" />
