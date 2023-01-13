@@ -1,5 +1,6 @@
 .search {
   margin-top: 20px;
+  display: inline;
 
   &-title {
     font-family: 'Open Sans';
@@ -10,15 +11,16 @@
     color: var(--title);
     position: relative;
     z-index: 2;
+    display: inline;
   }
 
   &-content {
-    width: 760px;
     position: relative;
+
     &>img {
       position: absolute;
       z-index: 0;
-      right: 115px;
+      right: -75px;
       top: -75px;
     }
   }

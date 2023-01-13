@@ -4,6 +4,7 @@ import searchIcon from "../assets/icons/search.svg";
 import listIcon from "../assets/icons/list.svg";
 import infoIcon from "../assets/icons/info.svg";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 function Navbar() {
   return (
@@ -41,6 +42,7 @@ function Navbar() {
         </div>
       </header>
       <Outlet />
+      <Footer />
     </React.Fragment>
   );
 }
