@@ -19,5 +19,3 @@ export const Wave = () => {
     </div>
   );
 };
-
-export default Wave;
