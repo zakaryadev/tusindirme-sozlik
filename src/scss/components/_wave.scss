@@ -19,15 +19,14 @@
       border-radius: 8px;
       border: none;
       cursor: pointer;
-
-      &-blue {
-        color: #0059FB;
+      color: var(--backgroundColor);
+      transition: all .3s ease-in-out;
+      &:active {
+        transform: scale(1.05);
       }
-
-      &-green {
-        color: #00A886;
+      &:hover {
+        opacity: 0.9;
       }
-
     }
   }
 

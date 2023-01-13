@@ -5,10 +5,10 @@ export const Wave = () => {
   return (
     <div className="wave">
       <div className="button-group">
-        <button className="btn btn-blue">
+        <button className="btn">
           O’rganish uchun <strong>lug’at</strong>
         </button>
-        <button className="btn btn-green">
+        <button className="btn">
           <strong>So’zlarni o’rganishning</strong> eng samarali usuli
         </button>
       </div>
