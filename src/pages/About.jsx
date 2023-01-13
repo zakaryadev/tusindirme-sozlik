@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+export const About = () => {
   return <div>About page</div>;
 }
 

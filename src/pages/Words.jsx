@@ -1,6 +1,6 @@
 import React from "react";
 
-function Words() {
+export const Words = () => {
   return <div>Words</div>;
 }
 

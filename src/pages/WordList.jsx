@@ -1,6 +1,6 @@
 import React from "react";
 
-function WordList() {
+export const WordList = () => {
   return <div>WorldList page</div>;
 }
 

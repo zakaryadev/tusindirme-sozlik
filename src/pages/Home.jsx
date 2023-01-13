@@ -2,7 +2,7 @@ import React from "react";
 import bg from "../assets/img/main.svg";
 import Search from "../components/Search";
 
-function Home() {
+export const Home = () => {
   return (
     <section className="main">
       <div className="container">

@@ -2,7 +2,7 @@ import React from "react";
 import searchIcon from "../assets/icons/search.svg";
 import flower from "../assets/img/flower.svg";
 
-function Search() {
+export const Search = () => {
   return (
     <div className="search">
       <h1 className="search-title">
