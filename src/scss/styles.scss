@@ -1,0 +1,11 @@
+// global styles (components etc)
+@import "./global";
+
+// components
+@import "./components/navbar";
+@import "./components/search";
+
+// pages
+@import "./pages/_main";
+
+// media queries
