@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-
+    flex-wrap: wrap;
     &_link {
       a {
         cursor: pointer;

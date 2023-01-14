@@ -5,6 +5,11 @@ import filter from "../assets/icons/filter.svg";
 import random from "../assets/icons/random.svg";
 
 export const Search = () => {
+  const [popup, setPopup] = React.useState(false);
+  const popActive = () => {
+    setPopup(!popup);
+  };
+
   return (
     <div className="search">
       <h1 className="search-title">
@@ -16,7 +21,7 @@ export const Search = () => {
           <img src={searchIcon} alt="searchIcon" />
         </div>
         <div className="btn-group">
-          <button className="btn btn-search">
+          <button className="btn btn-search" onClick={popActive}>
             <img src={filter} alt="filter" />
             <p>Filter</p>
           </button>
@@ -25,6 +30,15 @@ export const Search = () => {
             <p>Alfavit</p>
           </button>
         </div>
+        <div className={popup ? "show" : "hide"}>
+          <ul>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ul>
+        </div>
+
         <img src={flower} alt="flower" />
       </div>
     </div>
