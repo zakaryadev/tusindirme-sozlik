@@ -14,7 +14,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     padding: 15px;
-
+    
   &-links {
     display: flex;
     flex-direction: row;
@@ -32,7 +32,7 @@ header {
         display: flex;
         align-items: center;
         color: white;
-        opacity: 0.8;
+        opacity: 0.5;
 
         img {
           margin-right: 8px;
@@ -40,6 +40,12 @@ header {
 
         &:hover {
           opacity: 1;
+        }
+        &.active {
+          a {
+            opacity: 1;
+            color: red;
+          }
         }
       }
       
