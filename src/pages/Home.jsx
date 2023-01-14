@@ -1,10 +1,14 @@
 import React from "react";
+import Study from "../components/Study";
+import abImg from "../assets/img/ab.svg";
 
 const Home = () => {
   return (
-    <h1 className="home">
-      Home pages
-    </h1>
+    <section className="home" style={{ backgroundImage: `url(${abImg})` }}>
+      <div className="container">
+        <Study />
+      </div>
+    </section>
   );
 };
 

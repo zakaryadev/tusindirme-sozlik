@@ -5,9 +5,9 @@ header {
   right: 0;
   z-index: 9;
   margin: 0 auto;
-  background-color: #0039a429;
+  background-color: var(--backgroundColor);
   backdrop-filter: blur(10px);
-  border: 1px solid #80808071;
+  border-bottom: 1px solid #80808071;
   
   .navbar {
     display: flex;

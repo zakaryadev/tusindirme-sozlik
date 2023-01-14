@@ -30,7 +30,7 @@ const Search = () => {
             <p>Alfavit</p>
           </button>
         </div>
-        <div className={popup ? "show" : "hide"}>
+        <div className={`popup ${popup ? "show" : "hide"}`}>
           <ul>
             <li>List Item</li>
             <li>List Item</li>

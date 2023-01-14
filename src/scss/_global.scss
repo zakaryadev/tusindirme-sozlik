@@ -17,28 +17,17 @@ body {
 
 
 .container {
-  margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   padding: var(--padding);
+  margin: 0 auto;
 }
 
-.hide {
-    display: none;
-  }
-  .show {
-    display: block;
-  }
-
-.underline {
-  text-decoration: underline;
-}
-
-.clean {
-  clear: both;
-}
-
-.home {
+.show {
+  
   display: block;
-  height: 200vh;
+}
+.hide {
+  
+  display: none;
 }
