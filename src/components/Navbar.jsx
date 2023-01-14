@@ -5,8 +5,9 @@ import wordsList from "../assets/icons/wordslist.svg";
 import infoIcon from "../assets/icons/info.svg";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import Footer from "./Footer";
+import Menu from "./Menu";
 
-function Navbar() {
+const Navbar = () => {
   let activeStyle = {
     opacity: 1,
   };
@@ -54,10 +55,11 @@ function Navbar() {
           </nav>
         </div>
       </header>
+      <Menu />
       <Outlet />
       <Footer />
     </React.Fragment>
   );
-}
+};
 
 export default Navbar;

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import bg from "../assets/img/wave.svg";
 
-export const Wave = () => {
+const Wave = () => {
   const navigate = useNavigate();
 
   return (

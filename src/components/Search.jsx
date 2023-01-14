@@ -4,7 +4,7 @@ import flower from "../assets/img/flower.svg";
 import filter from "../assets/icons/filter.svg";
 import random from "../assets/icons/random.svg";
 
-export const Search = () => {
+const Search = () => {
   const [popup, setPopup] = React.useState(false);
   const popActive = () => {
     setPopup(!popup);
