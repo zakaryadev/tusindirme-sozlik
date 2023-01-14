@@ -6,6 +6,7 @@ header {
   display: block;
   z-index: 9;
   margin: 0 auto;
+  background-color: var(--backgroundColor);
 
   .navbar {
     display: flex;

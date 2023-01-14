@@ -1,7 +1,7 @@
 import React from "react";
 import Root from "./Routes/Root";
 
-export const App = () => {
+const App = () => {
   return <Root />;
 };
 

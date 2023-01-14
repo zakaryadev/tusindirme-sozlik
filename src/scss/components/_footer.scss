@@ -1,0 +1,17 @@
+footer {
+  height: 334px;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    grid-gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    li {
+      color: #FFF;
+      list-style-type: none;
+    }
+  }
+}
