@@ -6,11 +6,13 @@
 
 // components
 @import "./components/navbar";
+@import "./components/_main";
 @import "./components/search";
 @import "./components/wave";
-@import "./components/footer";
+
+
+// @import "./components/footer";
 
 // pages
-@import "./pages/_main";
 
 // media queries

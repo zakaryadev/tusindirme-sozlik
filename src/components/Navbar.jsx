@@ -3,8 +3,7 @@ import logo from "../assets/img/logo.svg";
 import words from "../assets/icons/words.svg";
 import wordsList from "../assets/icons/wordslist.svg";
 import infoIcon from "../assets/icons/info.svg";
-import { Link, NavLink, Outlet } from "react-router-dom";
-import Footer from "./Footer";
+import { NavLink, Outlet } from "react-router-dom";
 import Menu from "./Menu";
 
 const Navbar = () => {
@@ -57,7 +56,6 @@ const Navbar = () => {
       </header>
       <Menu />
       <Outlet />
-      <Footer />
     </React.Fragment>
   );
 };

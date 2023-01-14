@@ -1,27 +1,28 @@
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  display: block;
   z-index: 9;
   margin: 0 auto;
-  background-color: var(--backgroundColor);
-
+  background-color: #0039a429;
+  backdrop-filter: blur(10px);
+  border: 1px solid #80808071;
+  
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     padding: 15px;
     
   &-links {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    flex-wrap: wrap;
+
     &_link {
+
       a {
         cursor: pointer;
         text-decoration: none;
@@ -38,23 +39,14 @@ header {
         img {
           margin-right: 8px;
         }
-
+        
         &:hover {
           opacity: 1;
         }
-        &.active {
-          a {
-            opacity: 1;
-            color: red;
-          }
-        }
+        
       }
-      
     }
-
   }
-  
 }
-
 }
 

@@ -1,17 +1,16 @@
 .main {
-  position: relative;
-  z-index: 2;
-  margin-top: 60px;
+  display: block;
   height: 450px;
-  background-repeat: no-repeat;
-  background-size: fit-content;
   background-position: center;
-  
-  
+  background-size: contain;
+  background-repeat: no-repeat;
+
   &-content {
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
   }
 }
