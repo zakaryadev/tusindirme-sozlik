@@ -1,12 +1,20 @@
 import React from "react";
 import logo from "../assets/img/logo.svg";
+import { useNavigate } from "react-router-dom";
+
 const Footer = () => {
+  const nav = useNavigate();
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer__inner">
           <div className="footer__main">
-            <img className="footer__img" src={logo} alt="logo" />
+            <img
+              className="footer__img"
+              src={logo}
+              alt="logo"
+              onClick={() => nav("/home")}
+            />
             <div className="footer__content">
               <p className="footer__desc">Sociallıq tarmaqlar</p>
               <ul className="footer__social">

@@ -5,7 +5,7 @@ header {
   right: 0;
   z-index: 9;
   margin: 0 auto;
-  background-color: $backgroundPrimary;
+  background-color: rgba($color: $backgroundPrimary, $alpha: .8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #80808071;
   
