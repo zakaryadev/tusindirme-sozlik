@@ -34,6 +34,18 @@
     }
   }
 
+  .popular {
+    &-item {
+      // flex-direction: column;
+      flex-wrap: wrap;
+      
+      ul {
+        
+        margin-left: 20px !important;
+      }
+    }
+  }
+
   .footer {
     &__inner {
       flex-direction: column;

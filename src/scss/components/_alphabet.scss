@@ -1,0 +1,33 @@
+.alphabet {
+  width: 100%;
+  background-color: $words;
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  &-inner {
+    .alphabet-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(60px,9fr));
+      gap: 10px;
+      &-item {
+        margin: 0;
+        word-wrap: unset;
+        text-decoration: none;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $blue;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background: $popReqBg;
+        border-radius: 8px;
+      }
+    }
+  }
+}
