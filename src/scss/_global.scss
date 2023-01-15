@@ -5,12 +5,6 @@
   padding: 0;
 }
 
-:root {
-  --backgroundColor: #0039A4;
-  --padding: 0 340px;
-  --title: #ECECEC;
-}
-
 body {
   background-color: $backgroundPrimary;
 }
@@ -19,7 +13,7 @@ body {
 .container {
   max-width: 1440px;
   width: 100%;
-  padding: var(--padding);
+  padding: $padding;
   margin: 0 auto;
 }
 

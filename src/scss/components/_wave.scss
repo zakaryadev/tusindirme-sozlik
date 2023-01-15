@@ -2,20 +2,22 @@
   background-size: cover;
   background-repeat: repeat-x;
   background-position: center top;
-  padding: 80px 240px 16px;
+  padding: 80px 0 16px;
   display: block;
   
   .button-group {
     display: flex;
+    width: 760px;
     gap: 20px;
     width: 100%;
     justify-content: center;
 
     .btn {
+      width: 100%;
       position: relative;
       z-index: 2;
       padding: 20px;
-      width: 370px;
+      // width: 370px;
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
@@ -24,7 +26,7 @@
       border-radius: 8px;
       border: none;
       cursor: pointer;
-      color: var(--backgroundColor);
+      color: $blue;
       transition: all .2s ease-in-out;
 
       &:active {
@@ -36,5 +38,18 @@
       }
     }
   }
+  @media (max-width: 1240px) {
+  .button-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .button-group {
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 }
+

@@ -3,12 +3,11 @@
   display: inline;
 
   &-title {
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
-    color: var(--title);
+    color: $bigTitle;
     position: relative;
     z-index: 2;
     display: inline;
@@ -30,7 +29,7 @@
       margin-top: 10px;
       width: 573px;
       height: 42px;
-      background: #FFFFFF;
+      background: $words;
       border-radius: 21px;
       position: relative;
       z-index: 2;
@@ -47,7 +46,7 @@
         line-height: 18px;
         
         &::placeholder {
-          color: #5994D1;
+          color: $noActive;
         }
 
         &:active {
@@ -60,7 +59,7 @@
         margin-right: 4px;
         padding: 8px 12px;
         border-radius: 19px;
-        background-color: var(--backgroundColor);
+        background-color: $blue;
         &:active {
           transform: scale(.9);
         }
@@ -76,7 +75,7 @@
       .btn {
         cursor: pointer;
         margin-right: 60px;
-        color: #FFFFFF;
+        color: $words;
         background: none;
         border: none;
         display: flex;
@@ -96,19 +95,17 @@
         margin-top: 10px;
         position: absolute;
         z-index: 10;
-        background-color: #FFFFFF;
+        background-color: $words;
         border-radius: 5px;
         box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 19%);
         li {
           
           padding: 5px 10px;
-          color: var(--backgroundColor);
+          color: $blue;
           list-style-type: none;
           margin: 0;
         }
         
       }
   }
-  
-  
 }

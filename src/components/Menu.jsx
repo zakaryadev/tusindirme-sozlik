@@ -14,13 +14,15 @@ const Menu = () => {
         </div>
       </div>
       <div className="wave" style={{ backgroundImage: `url(${wave})` }}>
-        <div className="button-group">
-          <button onClick={() => navigate("/words")} className="btn">
-            Úyreniw ushın <strong>sózlik</strong>
-          </button>
-          <button onClick={() => navigate("/about")} className="btn">
-            <strong>Sózlerdi úyreniwdiń</strong> eń ónimdarlı usılı
-          </button>
+        <div className="container">
+          <div className="button-group">
+            <button onClick={() => navigate("/words")} className="btn">
+              Úyreniw ushın <strong>sózlik</strong>
+            </button>
+            <button onClick={() => navigate("/about")} className="btn">
+              <strong>Sózlerdi úyreniwdiń</strong> eń ónimdarlı usılı
+            </button>
+          </div>
         </div>
       </div>
     </section>
