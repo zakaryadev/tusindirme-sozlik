@@ -1,0 +1,18 @@
+.about {
+  padding: 80px 0;
+  background-color: $words;;
+  &-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #111111;
+    margin-bottom: 20px;
+  }
+  &-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
