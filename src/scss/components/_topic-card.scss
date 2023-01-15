@@ -1,9 +1,12 @@
 .topic {
+  display: block;
+  width: 100%;
   &-inner {
     display: flex;
     flex-direction: row;
     flex-basis: content;
     gap: 10px;
+    align-items: center;
   }
 
   &-title {

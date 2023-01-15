@@ -28,6 +28,12 @@
     }
   }
 
+  .topic {
+    &-inner {
+      flex-direction: column !important;
+    }
+  }
+
   .footer {
     &__inner {
       flex-direction: column;

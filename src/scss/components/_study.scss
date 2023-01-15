@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center top;
-  height: 850px;
   flex: 1;
   &-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
   }
   
 }
