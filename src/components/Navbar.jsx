@@ -5,6 +5,7 @@ import wordsList from "../assets/icons/wordslist.svg";
 import infoIcon from "../assets/icons/info.svg";
 import { NavLink, Outlet } from "react-router-dom";
 import Menu from "./Menu";
+import Footer from "./Footer";
 
 const Navbar = () => {
   let activeStyle = {
@@ -56,6 +57,7 @@ const Navbar = () => {
       </header>
       <Menu />
       <Outlet />
+      <Footer />
     </React.Fragment>
   );
 };
