@@ -1,16 +1,24 @@
 .footer {
-  background-color: #202020;
+  background-color: $footerBg;
   padding: 60px 0 80px;
-  color: #fff;
+  color: $words;
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   &__main {
     max-width: 240px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
   }
   &__img {
     margin-bottom: 20px;
+    height: 36px;
   }
   &__desc {
     margin-bottom: 17px;
@@ -18,9 +26,11 @@
   }
   &__social {
     display: flex;
+    align-items: center;
   }
   &__social-item {
     margin-right: 20px;
+    list-style-type: none;
   }
   &__social-link {
     svg {
@@ -34,21 +44,27 @@
   }
   &__links {
     display: flex;
-    padding-top: 20px;
   }
   &__list + ul {
     margin-left: 90px;
   }
   &__list-title {
     margin-bottom: 20px;
+    list-style-type: none;
     h4 {
       font-weight: 600;
       font-size: 20px;
       line-height: 24px;
-      color: #fff;
+      color: $words;
     }
   }
   &__list-item {
+    list-style-type: none;
     margin-bottom: 10px;
+    
+    a {
+      text-decoration: none;
+      color: $words;
+    }
   }
 }

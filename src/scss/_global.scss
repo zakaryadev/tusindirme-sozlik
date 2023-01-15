@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--backgroundColor);
+  background-color: $backgroundPrimary;
 }
 
 
@@ -30,4 +30,11 @@ body {
 .hide {
   
   display: none;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 80%;
+    padding: 0;
+  }
 }

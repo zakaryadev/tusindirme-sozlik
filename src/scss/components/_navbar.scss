@@ -5,7 +5,7 @@ header {
   right: 0;
   z-index: 9;
   margin: 0 auto;
-  background-color: var(--backgroundColor);
+  background-color: $backgroundPrimary;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #80808071;
   
@@ -24,6 +24,7 @@ header {
     &_link {
 
       a {
+        width: fit-content;
         cursor: pointer;
         text-decoration: none;
         margin-right: 36px;
@@ -33,7 +34,7 @@ header {
         line-height: 18px;
         display: flex;
         align-items: center;
-        color: white;
+        color: $words;
         opacity: 0.5;
 
         img {
