@@ -1,7 +1,7 @@
 import React from "react";
 import abImg from "../assets/img/ab.svg";
 import Badge from "./Badge";
-import Card from "../components/Card";
+import TopicCard from "./TopicCard";
 
 const Study = () => {
   return (
@@ -16,7 +16,7 @@ const Study = () => {
             />
           </div>
           <div className="study-card">
-            <Card />
+            <TopicCard />
           </div>
         </div>
       </div>

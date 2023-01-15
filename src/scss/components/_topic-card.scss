@@ -1,0 +1,42 @@
+.topic {
+  &-inner {
+    display: flex;
+    flex-direction: row;
+    flex-basis: content;
+    gap: 10px;
+  }
+
+  &-title {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #111111;
+    margin-bottom: 15px;
+  }
+  &-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #21244A;
+    margin-bottom: 30px;
+  }
+  &-btn {
+    border: none;
+    background: #0059FB;
+    border-radius: 8px;
+    color: $words;
+    padding: 15px 50px;
+    background-color: $blue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+}

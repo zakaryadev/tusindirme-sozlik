@@ -7,4 +7,9 @@
   background-position: center top;
   height: 850px;
   flex: 1;
+  &-card {
+    display: flex;
+    flex-direction: row;
+  }
+  
 }

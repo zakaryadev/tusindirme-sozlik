@@ -25,10 +25,8 @@ const Card = () => {
       <div className="card-content">
         <div className="card-content-title">Kelip atır</div>
         <p className="card-content-desc">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quia ea
-          laboriosam voluptatibus, assumenda aperiam! Earum ex corporis facere
-          porro ab voluptatum voluptate, dolorum soluta. Sequi voluptate amet
-          ex.
+          Hendrerit faucibus mauris vel praesent sit. Felis id lacus netus nec
+          aliquam quis vitae tempor. Ac in id fusce vel. Laoreet a....
         </p>
       </div>
     </div>

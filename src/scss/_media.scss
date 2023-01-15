@@ -1,4 +1,16 @@
+@media (max-width: 1280px) {
+  .container {
+    width: 80% !important;
+    padding: 0 !important;
+  }
+}
+
+
 @media (max-width: 767px) {
+  .main {
+    background-position: top !important;
+    background-size: 150% !important;
+  }
   .navbar {
       &-links {
         display: none !important;
