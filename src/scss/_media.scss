@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+  .navbar {
+      &-links {
+        display: none !important;
+      }
+    }
+  .button-group {
+    align-items: center;
+    flex-direction: column;
+  }
+  .search {
+    &-content {
+      &>img {
+        display: none;
+      }
+    }
+  }
+
+  .footer {
+    &__inner {
+      flex-direction: column;
+    }
+    &__links {
+      flex-direction: column;
+    }
+    &__list + ul{
+      margin-left: 0 !important;
+    }
+  }
+}
+

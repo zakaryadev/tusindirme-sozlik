@@ -1,9 +1,9 @@
 import React from "react";
 
-const Badge = ({ p }) => {
+const Badge = ({ t, p, tt }) => {
   return (
-    <div style={{ padding: p }} className="big-badge">
-      Úyreniw ushın álipbe
+    <div style={{ padding: p, textTransform: tt }} className="big-badge">
+      {t}
     </div>
   );
 };

@@ -1,8 +1,14 @@
 import React from "react";
+
 import Study from "../components/Study";
 
 const Home = () => {
-  return <Study />;
+  return (
+    <>
+      <Study />
+      
+    </>
+  );
 };
 
 export default Home;

@@ -1,6 +1,9 @@
 // normalize scss
 @import "normalize.scss";
 
+// media queries
+@import "./media";
+
 // global styles (components etc)
 @import "./vars";
 @import "./global";
@@ -20,5 +23,3 @@
 // pages
 
 @import "./pages/home";
-
-// media queries
