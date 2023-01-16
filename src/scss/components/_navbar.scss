@@ -7,7 +7,6 @@ header {
   margin: 0 auto;
   background-color: rgba($color: $backgroundPrimary, $alpha: .8);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #80808071;
   
   .navbar {
     display: flex;
@@ -39,6 +38,7 @@ header {
 
         img {
           margin-right: 8px;
+          display: none;
         }
         
         &:hover {
