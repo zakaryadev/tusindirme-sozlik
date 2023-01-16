@@ -30,8 +30,14 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 33px;
     color: $blue;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    
+    svg {
+      margin-left: 20px;
+    }
     }
 
     &-desc {
