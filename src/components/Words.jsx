@@ -3,7 +3,6 @@ import Pagination from "./Pagination";
 import bg from "../assets/img/ab.svg";
 
 const Words = () => {
-  const list = [];
   let newArr = [
     "Suspense;",
     "Suspense;",

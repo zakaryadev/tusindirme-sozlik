@@ -1,0 +1,30 @@
+.card-category {
+  position: relative;
+  padding-bottom: 60px;
+  .category {
+    position: absolute;
+    left: -180px;
+    &-list {
+      width: fit-content;
+      padding: 10px 0;
+      background-color: $words;
+      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.14);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    &-item {
+      padding: 10px 20px;
+      list-style-type: none;
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #21244A;
+    }
+    .active {
+      background-color: $noActive;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Words from "../pages/Words";
-import WordList from "../pages/WordList";
+import WordListPage from "../pages/WordListPage";
 import About from "../pages/About";
 
 const Root = () => {
@@ -14,7 +14,7 @@ const Root = () => {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/words" element={<Words />} />
-          <Route path="/wordslist" element={<WordList />} />
+          <Route path="/wordslist" element={<WordListPage />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Route>
