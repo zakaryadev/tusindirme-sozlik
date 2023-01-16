@@ -1,7 +1,16 @@
+@media (max-width: 1440px) {
+  .search-content .input {
+    width: 573px;
+  }
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 80% !important;
     padding: 0 !important;
+  }
+  .search-content .input {
+    width: unset;
   }
 }
 
