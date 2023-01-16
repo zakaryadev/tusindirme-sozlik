@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+  &-btn {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    background: #DDFAFF;
+    border-radius: 8px;
+    border: none;
+  }
+  &-list {
+    display: inherit;
+    gap: 10px;
+    li {
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $words;
+      display: inherit;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 30px;
+      background: #00A0E3;
+      border-radius: 8px;
+      list-style-type: none;
+    }
+    
+  }
+}

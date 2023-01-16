@@ -1,4 +1,5 @@
 import React from "react";
+import Pagination from "./Pagination";
 import bg from "../assets/img/ab.svg";
 
 const Words = () => {
@@ -52,6 +53,7 @@ const Words = () => {
               return <li key={indx}>{item}</li>;
             })}
           </ul>
+          <Pagination />
         </div>
       </div>
     </section>

@@ -12,6 +12,13 @@
   .search-content .input {
     width: unset;
   }
+  .words {
+    &-list {
+      &_item {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 3fr)) !important;
+      }
+    }
+  }
 }
 
 
@@ -98,6 +105,14 @@
           margin: 0 !important;
         }
         margin-left: 20px !important;
+      }
+    }
+  }
+
+  .words {
+    &-list {
+      &_item {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 3fr)) !important;
       }
     }
   }
