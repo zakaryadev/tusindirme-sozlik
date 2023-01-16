@@ -21,9 +21,17 @@
   }
   .navbar {
       justify-content: space-around !important;
+      &-logo {
+        display: none;
+      }
       &-links {
+        width: 100%;
+        justify-content: space-between !important;
         &_link {
           a {
+            &:first-child {
+              margin: 0 !important;
+            }
             margin-right: 0 !important;
             margin-left: 20px !important;
             padding: 10px;
@@ -88,9 +96,11 @@
   .footer {
     &__inner {
       flex-direction: column;
+      gap: 20px;
     }
     &__links {
       flex-direction: column;
+      gap: 20px;
     }
     &__list + ul{
       margin-left: 0 !important;

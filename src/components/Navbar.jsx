@@ -1,11 +1,13 @@
 import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import Menu from "./Menu";
+import Footer from "./Footer";
+
 import logo from "../assets/img/logo.svg";
 import words from "../assets/icons/words.svg";
 import wordsList from "../assets/icons/wordslist.svg";
 import infoIcon from "../assets/icons/info.svg";
-import { NavLink, Outlet } from "react-router-dom";
-import Menu from "./Menu";
-import Footer from "./Footer";
+import home from "../assets/icons/Home.svg";
 
 const Navbar = () => {
   let activeStyle = {
@@ -24,6 +26,14 @@ const Navbar = () => {
             </NavLink>
 
             <ul className="navbar-links">
+              <li className="navbar-links_link">
+                <NavLink
+                  to="/home"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
+                  <img src={home} alt="home-icon" />
+                </NavLink>
+              </li>
               <li className="navbar-links_link">
                 <NavLink
                   to="/words"

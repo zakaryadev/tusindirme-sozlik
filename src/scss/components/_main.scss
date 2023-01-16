@@ -5,14 +5,11 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  flex: 1 !important;
 
   &-content {
     margin: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 2;
   }
 }
