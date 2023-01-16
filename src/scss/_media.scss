@@ -58,6 +58,13 @@
     &-info {
       margin-bottom: 20px;
     }
+
+    .card-header {
+      align-items: center;
+      button {
+        height: fit-content;
+      }
+    }
     
   }
 
