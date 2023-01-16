@@ -30,7 +30,7 @@ const Navbar = () => {
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
                   <img src={words} alt="words" />
-                  Sózler
+                  <p>Sózler</p>
                 </NavLink>
               </li>
               <li className="navbar-links_link">
@@ -39,7 +39,7 @@ const Navbar = () => {
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
                   <img src={wordsList} alt="wordsList" />
-                  Sózler Dizimi
+                  <p>Sózler Dizimi</p>
                 </NavLink>
               </li>
               <li className="navbar-links_link">
@@ -48,7 +48,7 @@ const Navbar = () => {
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
                   <img src={infoIcon} alt="infoIcon" />
-                  Baǵdarlama haqqında
+                  <p>Baǵdarlama haqqında</p>
                 </NavLink>
               </li>
             </ul>

@@ -7,13 +7,28 @@
 
 
 @media (max-width: 767px) {
+  header {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: unset !important;
+    height: fit-content;
+  }
   .main {
     background-position: top !important;
     background-size: 150% !important;
   }
   .navbar {
+      justify-content: space-around !important;
       &-links {
-        display: none !important;
+        &_link {
+          a {
+            p { 
+              display: none;
+            }
+          }
+        }
       }
     }
   .button-group {
@@ -32,6 +47,14 @@
     &-inner {
       flex-direction: column !important;
     }
+    .big-badge {
+      margin: 20px 0 !important;
+    }
+
+    &-info {
+      margin-bottom: 20px;
+    }
+    
   }
 
   .popular {
@@ -40,7 +63,9 @@
       flex-wrap: wrap;
       
       ul {
-        
+        &:first-child {
+          margin: 0 !important;
+        }
         margin-left: 20px !important;
       }
     }
