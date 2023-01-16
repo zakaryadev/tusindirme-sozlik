@@ -47,9 +47,11 @@ const Words = () => {
       <div className="container">
         <div className="words-title">Sózler dizimi</div>
         <div className="words-list">
-          <ul className="words-list_item">{
-            
-          }</ul>
+          <ul className="words-list_item">
+            {newArr.map((item, indx) => {
+              return <li key={indx}>{item}</li>;
+            })}
+          </ul>
         </div>
       </div>
     </section>
