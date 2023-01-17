@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Words from "../pages/Words";
-import WordListPage from "../pages/WordListPage";
+import WordList from "../pages/WordsList";
+import WordListItem from "../pages/WordListItem";
 import About from "../pages/About";
 
 const Root = () => {
@@ -12,7 +13,8 @@ const Root = () => {
         <Route path="/" element={<Navbar />}>
           <Route path="/" element={<Words />} />
           <Route path="/words" element={<Words />} />
-          <Route path="/wordslist" element={<WordListPage />} />
+          <Route path="/wordslist" element={<WordList />} />
+          <Route path="/wordslist/item" element={<WordListItem />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Route>

@@ -2,7 +2,7 @@ import React from "react";
 import Word from "../components/Words";
 import PopularReq from "../components/PopularReq";
 
-export const Words = () => {
+export const WordsList = () => {
   return (
     <React.Fragment>
       <Word />
@@ -11,4 +11,4 @@ export const Words = () => {
   );
 };
 
-export default Words;
+export default WordsList;
