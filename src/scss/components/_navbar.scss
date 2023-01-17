@@ -15,7 +15,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 0;
     
   &-links {
     display: flex;
@@ -28,7 +28,7 @@ header {
         width: fit-content;
         cursor: pointer;
         text-decoration: none;
-        margin-right: 36px;
+        margin-left: 36px;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -37,7 +37,7 @@ header {
         align-items: center;
         color: $words;
         opacity: 0.5;
-
+        
         img {
           margin-right: 8px;
           display: none;
