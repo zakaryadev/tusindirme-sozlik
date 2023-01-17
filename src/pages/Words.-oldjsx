@@ -1,15 +1,14 @@
 import React from "react";
+import Word from "../components/Words";
 import PopularReq from "../components/PopularReq";
 
-import Study from "../components/Study";
-
-const Home = () => {
+export const Words = () => {
   return (
     <React.Fragment>
-      <Study />
+      <Word />
       <PopularReq />
     </React.Fragment>
   );
 };
 
-export default Home;
+export default Words;

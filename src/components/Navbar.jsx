@@ -19,27 +19,20 @@ const Navbar = () => {
       <header>
         <div className="container">
           <nav className="navbar">
-            <NavLink to="/home">
+            <NavLink to="/words">
               <span className="navbar-logo">
                 <img src={logo} alt="Logo" />
               </span>
             </NavLink>
 
             <ul className="navbar-links">
-              <li className="navbar-links_link">
-                <NavLink
-                  to="/home"
-                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                >
-                  <img src={home} alt="home-icon" />
-                </NavLink>
-              </li>
+              
               <li className="navbar-links_link">
                 <NavLink
                   to="/words"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  <img src={words} alt="words" />
+                  <img src={home} alt="home-icon" />
                   <p>Sózler</p>
                 </NavLink>
               </li>

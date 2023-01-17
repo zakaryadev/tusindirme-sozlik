@@ -1,11 +1,12 @@
 import React from "react";
-import Word from "../components/Words";
 import PopularReq from "../components/PopularReq";
 
-export const Words = () => {
+import Study from "../components/Study";
+
+const Words = () => {
   return (
     <React.Fragment>
-      <Word />
+      <Study />
       <PopularReq />
     </React.Fragment>
   );
