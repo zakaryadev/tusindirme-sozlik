@@ -6,9 +6,35 @@ import random from "../assets/icons/random.svg";
 
 const Search = () => {
   const [popup, setPopup] = React.useState(false);
+  const [res, setRes] = React.useState([]);
+  const [value, setValue] = React.useState("");
+  const data = [
+    "Sózlik",
+    "Sózliktin",
+    "Sózlikler",
+    "Awdarma",
+    "Qollanba",
+    "Sabaqlıq",
+    "Kompyuter",
+    "Sozler",
+  ];
   const popActive = () => {
     setPopup(!popup);
   };
+  React.useEffect(() => {
+    const getData = setTimeout(() => {
+      if (value) {
+        // console.log(reqZ);
+        const dat = data.filter((item) =>
+          item.toLowerCase().includes(value.toLowerCase())
+        );
+        setRes(dat);
+      } else {
+        setRes([]);
+      }
+    }, 500);
+    return () => clearTimeout(getData);
+  }, [value]);
 
   return (
     <div className="search">
@@ -17,9 +43,23 @@ const Search = () => {
       </h1>
       <div className="search-content">
         <div className="input">
-          <input type="text" placeholder="sózlerdi izlew ushın jazıń" />
+          <input
+            type="text"
+            placeholder="sózlerdi izlew ushın jazıń"
+            onChange={(event) => setValue(event.target.value)}
+          />
           <img src={searchIcon} alt="searchIcon" />
         </div>
+        <ul className="req-list">
+          {res?.length > 0 &&
+            res?.map((item, indx) => {
+              return (
+                <li className="req-list-item" key={indx}>
+                  {indx + 1} {item}
+                </li>
+              );
+            })}
+        </ul>
         <div className="btn-group">
           <button className="btn btn-search" onClick={popActive}>
             <img src={filter} alt="filter" />
