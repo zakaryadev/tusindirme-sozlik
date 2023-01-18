@@ -56,5 +56,55 @@
   }
   .main {
     padding: 30px;
+    &-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .search-bar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        svg {
+          position: absolute;
+          left: 16px;
+          cursor: pointer;
+        }
+        input {
+          width: 45%;
+          min-width: 546px;
+          height: 52px;
+          left: 455px;
+          top: 28px;
+          border: none;
+          outline: none;
+          background: #F3F5F7;
+          border-radius: 13px;
+          padding: 15px 50px;
+          &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ADADAD;
+          }
+        }
+      }
+      &.btn {
+        cursor: pointer;
+        padding: 11px 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        color: #111018;
+        border: 1px solid #F5F5F5;
+        border-radius: 12px;
+        &-primary {
+          background: #6D6DF8;
+          color: #FFFFFF;
+        }
+      }
+    }
   }
 }
