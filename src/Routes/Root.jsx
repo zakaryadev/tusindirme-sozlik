@@ -5,6 +5,7 @@ import Words from "../pages/Words";
 import WordList from "../pages/WordsList";
 import WordListItem from "../pages/WordListItem";
 import About from "../pages/About";
+import Admin from "../pages/admin/Admin";
 
 const Root = () => {
   return (
@@ -18,6 +19,7 @@ const Root = () => {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Route>
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
