@@ -5,9 +5,9 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-
+  background-color: $backgroundPrimary;
   &-content {
-    margin: 40px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
