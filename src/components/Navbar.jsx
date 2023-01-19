@@ -4,7 +4,6 @@ import Menu from "./Menu";
 import Footer from "./Footer";
 
 import logo from "../assets/img/logo.svg";
-import words from "../assets/icons/words.svg";
 import wordsList from "../assets/icons/wordslist.svg";
 import infoIcon from "../assets/icons/info.svg";
 import home from "../assets/icons/Home.svg";
