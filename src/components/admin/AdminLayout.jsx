@@ -9,7 +9,7 @@ const AdminPanel = () => {
       <Aside />
       <main className="admin-main">
         <div className="admin-main-header">
-          <button className="admin-main-header btn btn-primary">Button</button>
+          {/* <button className="admin-main-header btn btn-primary">Button</button> */}
           <div className="search-bar">
             <svg
               width="18"

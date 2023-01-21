@@ -9,6 +9,7 @@ import Dashboard from "../pages/AdminPage/Dashboard";
 import AdminWords from "../pages/AdminPage/AdminWords";
 import AdminLayout from "../components/admin/AdminLayout";
 import Categories from "../pages/AdminPage/Categories";
+import SignIn from "../pages/AdminPage/SignIn";
 
 const Root = () => {
   return (
@@ -22,6 +23,7 @@ const Root = () => {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Route>
+        <Route path="signin" element={<SignIn />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Navigate to={"dashboard"} />}></Route>
           <Route path="dashboard" element={<Dashboard />} />
