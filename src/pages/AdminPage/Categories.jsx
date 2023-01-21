@@ -1,5 +1,7 @@
+import CategoriesList from "../../components/admin/components/CategoriesList";
+
 const Categories = () => {
-  return <h1>Kategoriya</h1>;
+  return <CategoriesList />;
 };
 
 export default Categories;
