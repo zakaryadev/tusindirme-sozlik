@@ -1,0 +1,106 @@
+.add-word {
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .add-word-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    .word-field {
+      width: 350px;
+      padding: 15px;
+      outline: none;
+      background: #FFFFFF;
+      border: 1px solid #E8E8E8;
+      border-radius: 4px;
+    }
+        .file {
+          overflow: hidden;
+          width: 150px;
+        }
+        .file::-webkit-file-upload-button {
+          visibility: hidden;
+        }
+        .file::before {
+          content: 'Audio Fayl';
+          display: inline-block;
+          background: #6D6DF8;
+          border-radius: 12px;
+          padding: 20px 30px;
+          color: #FFFFFF;
+          outline: none;
+          white-space: nowrap;
+          -webkit-user-select: none;
+          cursor: pointer;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+        }
+        .file:hover::before {
+          border-color: black;
+        }
+        .file:active::before {
+          background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+        }
+  }
+  select {
+    padding: 15px 20px;
+    width: 350px;
+    height: 52px;
+    left: 40px;
+    top: 122px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #111018;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111018;
+
+  }
+  option {
+    padding: 15px;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  textarea {
+    padding: 20px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+  }
+
+  .submit-btn {
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+      padding: 15px;
+      background: #6D6DF8;
+      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      border: none;
+      margin: 30px auto;
+      width: 100%;
+    }
+}
