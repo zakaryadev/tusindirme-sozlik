@@ -22,8 +22,8 @@ const Root = () => {
           <Route path="/wordslist" element={<WordList />} />
           <Route path="/wordslist/item" element={<WordListItem />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="/*" element={<NotFound />} />
         <Route path="signin" element={<SignIn />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Navigate to={"dashboard"} />}></Route>
