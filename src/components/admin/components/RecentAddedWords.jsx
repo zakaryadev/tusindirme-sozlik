@@ -1,9 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const RecentAddedWords = () => {
   return (
     <div className="added-words">
-      <h3 className="title">Sońǵı qosıǵan sózler</h3>
+      <div className="added-words-header">
+        <h3 className="title">Sońǵı qosılǵan sózler</h3>
+        <NavLink to="/admin/words">Hámmesin kóriw</NavLink>
+      </div>
+
       <table className="added-words-list">
         <thead>
           <th>Sóz</th>
@@ -36,7 +41,7 @@ const RecentAddedWords = () => {
             <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -64,7 +69,7 @@ const RecentAddedWords = () => {
             <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -92,7 +97,7 @@ const RecentAddedWords = () => {
             <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -120,7 +125,7 @@ const RecentAddedWords = () => {
             <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -148,7 +153,7 @@ const RecentAddedWords = () => {
             <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -176,7 +181,7 @@ const RecentAddedWords = () => {
             <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
         </tbody>

@@ -1,0 +1,17 @@
+.admin {
+  font-family: 'Inter' !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 20px;
+
+  .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #111018;
+  }
+}

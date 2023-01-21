@@ -1,12 +1,13 @@
 import React from "react";
 
-const CategoriesList = () => {
+const AdminWordsTable = () => {
   return (
-    <div className="added-words categories">
-      <h3 className="title">Kategoriyalar</h3>
+    <div className="admin-words">
+      <div className="title">Sózler dizimi</div>
       <table className="added-words-list">
         <thead>
           <th>Sóz</th>
+          <th>Kategoriya</th>
           <th>Sáne</th>
         </thead>
         <tbody>
@@ -32,9 +33,10 @@ const CategoriesList = () => {
               </div>
               <strong>Atlıq</strong>
             </td>
+            <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -59,9 +61,10 @@ const CategoriesList = () => {
               </div>
               <strong>Atlıq</strong>
             </td>
+            <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -86,9 +89,10 @@ const CategoriesList = () => {
               </div>
               <strong>Atlıq</strong>
             </td>
+            <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -113,9 +117,10 @@ const CategoriesList = () => {
               </div>
               <strong>Atlıq</strong>
             </td>
+            <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -140,9 +145,10 @@ const CategoriesList = () => {
               </div>
               <strong>Atlıq</strong>
             </td>
+            <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
           <tr className="row">
@@ -167,9 +173,10 @@ const CategoriesList = () => {
               </div>
               <strong>Atlıq</strong>
             </td>
+            <td>Atliq</td>
             <td>July 13,2022</td>
             <td>
-              <button className="btn">Ózgertiw</button>
+              <button className="btn">Tolıqraq...</button>
             </td>
           </tr>
         </tbody>
@@ -178,4 +185,4 @@ const CategoriesList = () => {
   );
 };
 
-export default CategoriesList;
+export default AdminWordsTable;

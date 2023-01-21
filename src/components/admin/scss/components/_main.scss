@@ -1,0 +1,124 @@
+.main {
+  padding: 30px 20px 40px 0;
+  background-color: #FFFFFF !important;
+  min-width: 70%; 
+  width: 85%;
+  max-width: 90%;
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .search-bar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      svg {
+        position: absolute;
+        left: 16px;
+        cursor: pointer;
+      }
+      input {
+        width: 45%;
+        min-width: 546px;
+        height: 52px;
+        left: 455px;
+        top: 28px;
+        border: none;
+        outline: none;
+        background: #F3F5F7;
+        border-radius: 13px;
+        padding: 15px 50px;
+
+        &::placeholder {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #ADADAD;
+        }
+      }
+    }
+    &.btn {
+      cursor: pointer;
+      padding: 11px 50px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 29px;
+      color: #111018;
+      border: none;
+      border-radius: 12px;
+
+      &-primary {
+        background: #6D6DF8;
+        color: #FFFFFF;
+      }
+
+    }
+  }
+
+  .dashboard {
+    &-header {
+      margin: 40px 0;
+
+      .statistic {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        a {
+          text-decoration: none;
+        }
+        &-badge {
+          min-width: 173px;
+          padding: 12px 18px;
+          width: fit-content;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background: #FFFFFF;
+          border: 1px solid #F5F5F5;
+          border-radius: 10px;
+
+      .icon {
+        padding: 8px;
+        background: rgba(85, 184, 239, 0.1);
+        border-radius: 6px;
+      }
+
+      &-content {
+        margin-left: 10px;
+
+        .header {
+          font-style: bold;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #111018
+        }
+
+        .count {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #200E32;
+        }
+
+      }
+
+        }
+
+      }
+    }
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 0px;
+      height: fit-content;
+    }
+    
+  }
+}

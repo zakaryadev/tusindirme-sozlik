@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Aside from "./components/Aside";
-import "./_admin.scss";
+import "./scss/all.scss";
 
 const AdminPanel = () => {
   return (

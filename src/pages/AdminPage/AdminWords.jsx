@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import AdminWordsTable from "../../components/admin/components/AdminWordsTable";
 
 const Words = () => {
-  return (
-    <div>Words</div>
-  )
-}
+  return <AdminWordsTable />;
+};
 
-export default Words
+export default Words;

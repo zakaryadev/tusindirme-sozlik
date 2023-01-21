@@ -22,6 +22,9 @@
         z-index: 5;
         &-item {
           list-style-type: none;
+          &:hover {
+            background-color: rgba(113, 113, 113, 0.219);
+          }
         }
       }
     }
