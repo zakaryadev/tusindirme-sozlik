@@ -1,4 +1,4 @@
-.main {
+.admin-main {
   padding: 30px 20px 40px 0;
   background-color: #FFFFFF !important;
   min-width: 70%; 
@@ -28,7 +28,7 @@
         background: #F3F5F7;
         border-radius: 13px;
         padding: 15px 50px;
-
+  
         &::placeholder {
           font-style: normal;
           font-weight: 400;
@@ -48,12 +48,12 @@
       color: #111018;
       border: none;
       border-radius: 12px;
-
+  
       &-primary {
         background: #6D6DF8;
         color: #FFFFFF;
       }
-
+  
     }
   }
 

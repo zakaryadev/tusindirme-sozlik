@@ -7,9 +7,9 @@ const AdminPanel = () => {
   return (
     <section className="admin">
       <Aside />
-      <main className="main">
-        <div className="main-header">
-          <button className="main-header btn btn-primary">Button</button>
+      <main className="admin-main">
+        <div className="admin-main-header">
+          <button className="admin-main-header btn btn-primary">Button</button>
           <div className="search-bar">
             <svg
               width="18"
@@ -25,7 +25,7 @@ const AdminPanel = () => {
             </svg>
             <input type="text" placeholder="Search words" />
           </div>
-          <button className="main-header btn">Admin</button>
+          <button className="admin-main-header btn">Admin</button>
         </div>
         <Outlet />
       </main>
