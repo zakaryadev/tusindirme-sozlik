@@ -10,6 +10,7 @@ import AdminWords from "../pages/AdminPage/AdminWords";
 import AdminLayout from "../components/admin/AdminLayout";
 import Categories from "../pages/AdminPage/Categories";
 import SignIn from "../pages/AdminPage/SignIn";
+import NotFound from "../pages/NotFound";
 
 const Root = () => {
   return (
@@ -21,7 +22,7 @@ const Root = () => {
           <Route path="/wordslist" element={<WordList />} />
           <Route path="/wordslist/item" element={<WordListItem />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="signin" element={<SignIn />} />
         <Route path="/admin" element={<AdminLayout />}>
