@@ -11,36 +11,38 @@ const Aside = () => {
   };
   return (
     <aside className="aside">
-      <NavLink to="/admin" className="logo">
-        <img src={logo} alt="Logo" />
-        <p>Túsindirme sózlik</p>
-      </NavLink>
-      <ul className="aside-tabs">
-        <NavLink
-          to="dashboard"
-          className="aside-tabs-item"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          <img src={dashboard} alt="dashboard" />
-          <p>Dashboard</p>
+      <div className="aside-inner">
+        <NavLink to="/admin" className="logo">
+          <img src={logo} alt="Logo" />
+          <p>Túsindirme sózlik</p>
         </NavLink>
-        <NavLink
-          to="words"
-          className="aside-tabs-item"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          <img src={lang} alt="lang" />
-          <p>Sózler</p>
-        </NavLink>
-        <NavLink
-          to="categories"
-          className="aside-tabs-item"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          <img src={category} alt="category" />
-          <p>Kategoriyalar</p>
-        </NavLink>
-      </ul>
+        <ul className="aside-tabs">
+          <NavLink
+            to="dashboard"
+            className="aside-tabs-item"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            <img src={dashboard} alt="dashboard" />
+            <p>Dashboard</p>
+          </NavLink>
+          <NavLink
+            to="words"
+            className="aside-tabs-item"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            <img src={lang} alt="lang" />
+            <p>Sózler</p>
+          </NavLink>
+          <NavLink
+            to="categories"
+            className="aside-tabs-item"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            <img src={category} alt="category" />
+            <p>Kategoriyalar</p>
+          </NavLink>
+        </ul>
+      </div>
     </aside>
   );
 };
