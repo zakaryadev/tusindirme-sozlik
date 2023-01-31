@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Alphabet = () => {
   const alphabet = [
@@ -39,14 +40,20 @@ const Alphabet = () => {
     "Z",
     "#",
   ];
-
+  const navigate = useNavigate();
   return (
     <div className="alphabet">
       <div className="alphabet-inner">
         <ul className="alphabet-list">
           {alphabet.map((item, indx) => {
             return (
-              <li className="alphabet-list-item" key={indx}>
+              <li
+                className="alphabet-list-item"
+                key={indx}
+                onClick={() =>
+                  navigate(`/wordslist?letter=${item.toLowerCase()}`)
+                }
+              >
                 {item} {item.toLowerCase()}
               </li>
             );
