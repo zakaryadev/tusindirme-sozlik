@@ -6,53 +6,16 @@ import axios from "axios";
 
 const Words = () => {
   const navigate = useNavigate();
-  let newArr = [
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-    "Suspense;",
-  ];
+
   const req = window.location.search;
-  console.log(req);
+
   const [data, setData] = React.useState([]);
 
   React.useEffect(() => {
     axios
       .get(`http://abbc.uz/api/words${req}`)
       .then((res) => setData(res?.data?.data));
-  }, []);
+  }, [req]);
   return (
     <section className="words" style={{ backgroundImage: `url(${bg})` }}>
       <div className="container">
@@ -60,7 +23,14 @@ const Words = () => {
         <div className="words-list">
           <ul className="words-list_item">
             {data.map((item, indx) => {
-              return <li key={indx}>{item.latin}</li>;
+              return (
+                <li
+                  onClick={() => navigate(`/wordslist/item${req}`)}
+                  key={indx}
+                >
+                  {item.latin}
+                </li>
+              );
             })}
           </ul>
           <Pagination />
