@@ -24,7 +24,6 @@ const Search = () => {
   React.useEffect(() => {
     const getData = setTimeout(() => {
       if (value) {
-        // console.log(reqZ);
         const dat = data.filter((item) =>
           item.toLowerCase().includes(value.toLowerCase())
         );
