@@ -1,15 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-
-}
+const initialState = {};
 
 export const searchSlice = {
-  name: 'search',
+  name: "search",
   initialState,
   reducers: {
-
+    // ozgeris boldim adasdasdasdasd
   },
-}
-export const {} = searchSlice.actions
+};
+export const {} = searchSlice.actions;
 export default searchSlice.reducers;
